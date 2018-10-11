@@ -183,8 +183,7 @@ module.exports = {
           {
             options: {
               formatter: require.resolve('react-dev-utils/eslintFormatter'),
-              eslintPath: require.resolve('eslint'),
-              
+              eslintPath: require.resolve('eslint')  
             },
             loader: require.resolve('eslint-loader'),
           },
@@ -246,7 +245,7 @@ module.exports = {
             exclude: /@babel(?:\/|\\{1,2})runtime/,
             loader: require.resolve('babel-loader'),
             options: {
-              babelrc: false,
+              babelrc: true,
               configFile: false,
               compact: false,
               presets: [
