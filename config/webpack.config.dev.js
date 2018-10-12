@@ -228,6 +228,7 @@ module.exports = {
                     },
                   },
                 ],
+                ['import', { libraryName: 'antd', style: true }],
                 "react-hot-loader/babel"
               ],
               // This is a feature of `babel-loader` for webpack (not Babel itself).

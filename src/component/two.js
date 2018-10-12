@@ -1,15 +1,37 @@
+
 import React,{ Component } from 'react'
 
-class TwoPage extends Component {
-    render () {
-        console.log(123)
-        return (
-            <div>
-                <h1>我是第二页面</h1>
-                <p>webpack4.0+,大爷的; 真的是太坑了,我的热更新了解一下</p>
-            </div>
-        )
-    }
-}
+import { DatePicker } from 'antd';
 
-export default TwoPage
+const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
+
+function onChange(date, dateString) {
+    console.log(date, dateString);
+  }
+
+class TwoPage extends Component {
+    state = {
+      collapsed: false,
+    }
+  
+    toggleCollapsed = () => {
+      this.setState({
+        collapsed: !this.state.collapsed,
+      });
+    }
+  
+    render() {
+      return (
+        <div>
+            <DatePicker onChange={onChange} />
+            <br />
+            <MonthPicker onChange={onChange} placeholder="Select month" />
+            <br />
+            <RangePicker onChange={onChange} />
+            <br />
+            <WeekPicker onChange={onChange} placeholder="Select week" />
+        </div>
+      );
+    }
+  }
+  export default TwoPage

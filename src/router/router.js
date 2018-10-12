@@ -3,6 +3,7 @@ import one from '@/component/one.js'
 import two from '@/component/two'
 import app from '@/component/App'
 import Nav from '@/other/nav/index'
+import '../../node_modules/antd/dist/antd.css'
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
 
