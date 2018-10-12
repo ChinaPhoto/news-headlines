@@ -10,6 +10,7 @@
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.4",
     "babel-plugin-named-asset-import": "^0.2.2",
+    "babel-plugin-react-html-attrs": "^2.1.0",
     "babel-preset-react-app": "^5.0.3",
     "bfj": "6.1.1",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
@@ -63,11 +64,11 @@
   },
   "eslintConfig": {
     "extends": "react-app",
-    "rules":{
+    "rules": {
       "no-undef": "off",
       "no-restricted-globals": "off",
       "no-unused-vars": "off",
-      "no-unused-expressions":"off"
+      "no-unused-expressions": "off"
     }
   },
   "browserslist": [
